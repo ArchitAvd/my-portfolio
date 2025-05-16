@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Archit G Avadhani</title>
+  </head>
+  <body>
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      title="Toggles light & dark"
+      aria-label="auto"
+      aria-live="polite"
+    >
+      <svg
+        class="sun-and-moon"
+        aria-hidden="true"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <mask class="moon" id="moon-mask">
+          <rect x="0" y="0" width="100%" height="100%" fill="white" />
+          <circle cx="24" cy="10" r="6" fill="black" />
+        </mask>
+        <circle
+          class="sun"
+          cx="12"
+          cy="12"
+          r="6"
+          mask="url(#moon-mask)"
+          fill="currentColor"
+        />
+        <g class="sun-beams" stroke="currentColor">
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </g>
+      </svg>
+    </button>
+    <header>
+      <h1>Archit G Avadhani</h1>
+      <p>Full Stack developer</p>
+    </header>
+    <nav>
+      <ul class="nav-tabs">
+        <li><a href="#about" class="active" data-tab="about">About</a></li>
+        <li><a href="#experience" data-tab="experience">Experience</a></li>
+        <li><a href="#snippets" data-tab="snippets">Snippets</a></li>
+        <li><a href="#contact" data-tab="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about" class="active">
+        <p>
+          Hi, I'm a Full Stack Developer based in Bengaluru, specializing in
+          building complete web applications from the ground up. I work across
+          both frontend and backend, blending technical expertise with
+          thoughtful user experience.
+        </p>
+        <p>
+          I bring web apps to life by blending smooth UI, robust backend logic,
+          and just the right amount of caffeine. My focus is on creating fast,
+          scalable, and user-friendly products that make a real difference.
+        </p>
+      </section>
+
+      <section id="experience">
+        <h2>Work Experience</h2>
+
+        <div class="experience-item">
+          <div class="experience-title">FullStack Developer</div>
+          <div class="experience-meta">UST • September 2024 — Present</div>
+          <p>
+            Junior fullstack developer working on breathing new life into legacy
+            systems by applying modern frameworks, adopting design systems, and
+            growing through real-world challenges.
+          </p>
+        </div>
+
+        <h2>Skills</h2>
+        <p>
+          HTML, CSS, JavaScript, TypeScript, React, React Native, 
+        </p>
+      </section>
+
+      <section id="snippets">
+        <h2>Snippets</h2>
+
+        <div class="snippet">
+          <div class="snippet-header">
+            <h3>Git</h3>
+            <span class="icon">▼</span>
+          </div>
+          <div class="snippet-content">
+            <pre>
+                git config user.name "ArchitAvd"
+                git config user.email "archit.avadhani@gmail.com"
+            </pre>
+            <pre>
+                git reset file.txt
+            </pre>
+          </div>
+        </div>
+
+        <div class="snippet">
+          <div class="snippet-header">
+            <h3>ASCII symbols not in keyboard</h3>
+            <span class="icon">▼</span>
+          </div>
+          <div class="snippet-content">
+            <ul>
+              <li>Rupee: ₹</li>
+              <li>Dash: —</li>
+              <li>Copyright: ©</li>
+              <li>Rights: ®</li>
+              <li>Trademark: ™</li>
+              <li>Degree: °</li>
+              <li>Plus Or Minus: ±</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Get in touch</h2>
+        <ul class="contact-links">
+          <li><a href="mailto:archit.avadhani@gmail.com">Email</a></li>
+          <li>
+            <a href="https://github.com/ArchitAvd" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/archit_avd" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/architganapatiavadhani/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="social-icons">
+      <a
+        href="https://github.com/ArchitAvd"
+        class="social-icon"
+        target="_blank"
+        aria-label="GitHub"
+      >
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 0.297C5.37 0.297 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.297 12 0.297Z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/architganapatiavadhani/"
+        class="social-icon"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452Z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.instagram.com/archit_avd"
+        class="social-icon"
+        target="_blank"
+        aria-label="Instagram"
+      >
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.162 12 18.162C15.403 18.162 18.162 15.403 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.209 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.209 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".nav-tabs a");
+        const sections = document.querySelectorAll("section");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Remove active class from all tabs
+            tabs.forEach((t) => t.classList.remove("active"));
+
+            // Add active class to clicked tab
+            this.classList.add("active");
+
+            // Hide all sections
+            sections.forEach((section) => section.classList.remove("active"));
+
+            // Show the corresponding section
+            const tabId = this.getAttribute("data-tab");
+            document.getElementById(tabId).classList.add("active");
+          });
+        });
+
+        const snippetHeaders = document.querySelectorAll(".snippet-header");
+
+        snippetHeaders.forEach((header) => {
+          header.addEventListener("click", function () {
+            // Toggle active class on the header
+            this.classList.toggle("active");
+
+            // Toggle the content visibility
+            const content = this.nextElementSibling;
+            content.classList.toggle("active");
+          });
+        });
+      });
+
+      // Modified theme toggle JavaScript to ensure correct initial icon state
+      document.addEventListener("DOMContentLoaded", function () {
+        const storageKey = "theme-preference";
+        const themeToggle = document.getElementById("theme-toggle");
+
+        // Get the user's color preference from local storage or system settings
+        const getColorPreference = () => {
+          if (localStorage.getItem(storageKey)) {
+            return localStorage.getItem(storageKey);
+          } else {
+            return window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+          }
+        };
+
+        // Save the theme preference to local storage
+        const setPreference = () => {
+          localStorage.setItem(storageKey, theme.value);
+          reflectPreference();
+        };
+
+        // Apply the theme preference to the document
+        const reflectPreference = () => {
+          document.firstElementChild.setAttribute("data-theme", theme.value);
+
+          if (themeToggle) {
+            themeToggle.setAttribute(
+              "aria-label",
+              `Switch to ${theme.value === "light" ? "dark" : "light"} theme`
+            );
+          }
+        };
+
+        // Function to toggle between light and dark theme
+        const toggleTheme = () => {
+          // Flip current value
+          theme.value = theme.value === "light" ? "dark" : "light";
+          setPreference();
+        };
+
+        // Theme object to store the current theme value
+        const theme = {
+          value: getColorPreference(),
+        };
+
+        // Set theme on initial load
+        reflectPreference();
+
+        // Add click event listener to the theme toggle button
+        if (themeToggle) {
+          themeToggle.addEventListener("click", toggleTheme);
+        }
+
+        // Sync with system preference changes
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", ({ matches: isDark }) => {
+            theme.value = isDark ? "dark" : "light";
+            setPreference();
+          });
+      });
+    </script>
+  </body>
+</html>
